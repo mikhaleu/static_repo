@@ -1,0 +1,59 @@
+﻿
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Обеды для студентв</title>
+		<script type="text/javascript" src="./Dinner/jquery.js"></script>
+		<script type="text/javascript" src="./Dinner/myScript.js"></script>
+		<style type="text/css">
+			.menuPosition {
+					margin: 5px;
+				}
+			body{background-image:url();}	
+			body {
+				background-image: url("./Dinner/background.jpg");
+				background-repeat:no-repeat;
+				background-attachment:fixed;
+				background-position:center; 
+				background-size: 100% auto;
+			}
+		</style>
+	</head>
+	<body style="width:100%">
+		<div style="margin-top:4px;float:left;">
+			<h4 style="margin:0;"> Куда заказать:
+				<select id="kitchen">
+					<option key="0">Столовая №1 </option>
+					<option key="1">Столовая №2</option>
+					<option key="2">Столовая общежития №5</option>
+					<option key="3">Столовая общежития №7</option>
+					<option key="4">Столовая общежития №10 </option>
+									</select>
+			</h4>
+		</div>
+        <div style="width:600px;margin:50px 350px;">
+		<a href="./Dinner.html" style="float:right">Начать заново</a>
+		<h2 style="color:green">Иванов Петр Сергеевич <span id="isFull" style="color:red;display:none">объелся :) </span></h2>
+		<p> <i>4 курс, механико-математический факультет</span></i></p>
+		<h2>Текущий балланс <span id="account">450 000</span> руб.</h2>
+		
+		<h4>Заказ на 
+			<select id="days">
+				<option key="0">Выберите день</option>
+				<option key="1">понедельник</option>
+				<option key="2">вторник</option>
+				<option key="3">четверг</option>
+				<option key="4">среда</option>
+				<option key="5">пятница</option>
+				<option key="6">суббота</option>
+				<option key="7">воскресенье</option>
+			</select>
+			<span id="time">   </span>
+		</h4>
+		<div id="menu"><div key="0"></div></div>
+		<p>Сумма Вашего заказа составила <span id="orderSum">0</span> рублей.</p>
+		<input id="makeOrder" type="button" value="Сделать заказ">
+		<p id="validation" style="color:red;display:none">Нельзя ходить голодным!!!</p>
+		<h3>История заказов:</h3>
+		<ol id="history" style="color:darkblue"
+        </div>
+	
+</body></html>
